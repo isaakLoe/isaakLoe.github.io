@@ -12,86 +12,66 @@ img {
 /*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
 
 
-/* ============ My styles below ============ */
-
-body {
-    background-color: #fafafa;
-    color: #222222;
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.6;
+header{ 
+background-color: rgb (255, 136, 0);
+    color: rgb (250, 250, 250); 
+padding: 2.5em 1.25em 1.75em;
 }
+    header h1{ 
+font-family: 
+        font-weight:Sutro, serif;
+        font-style: normal;
+        font-size: 1.9em; 
+        line-height: 1.2; 
+        margin-bottom: 0.4em
 
-header {
-    background-color: #ff8800;
-    color: #fafafa;
-    padding: 2.5em 1.25em 1.75em;
-}
-
-header h1 {
-    font-family: Sutro, serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.9em;
-    line-height: 1.2;
-    margin-bottom: 0.4em;
-}
-
+    }
 header h2 {
     font-family: Sutro, serif;
     font-weight: 300;
     font-style: italic;
     font-size: 1.2em;
-}
+    }
 
-figcaption {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    color: #222222;
-    padding: 1.5em 1.25em 0.5em;
-    line-height: 1.6;
-}
-
+    figcaption {
+            font-family:poppins, sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            color: rgb(34, 34, 34)
+            padding:1.5em 1.25em 0.5em;
+            line-height:1.7;
+    }
 main {
     padding: 0 1.25em;
-}
+        }
 
-h3 {
-    font-family: poppins, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #ff8800;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 1.05em;
-    margin: 1.75em 0 1em;
-}
+    h3{
+        
+    font-family:poppins, sans-serif;
+    font-weight:700;
+    font-style:normal;
+    font-size:1.05em;
+    color: rgb (255, 136, 0);
+    text-transform: uppercase; 
+    letter-spacing:0.08em;
+    margin: 1.75em 0 1em; 
 
-ul, ol {
-    padding-left: 1.25em;
-}
+    ol, ul { 
+        list-style: none 
 
-li {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 1.5;
-    margin-bottom: 1em;
-}
+        footer { 
+            background-color: rgb(255, 136, 0)
+            color: rgb (250, 250, 250)
+            padding: 1.5em 1.25em;
+            margin-top:1em;
+           
+            }
 
-footer {
-    background-color: #ff8800;
-    color: #fafafa;
-    padding: 1.5em 1.25em;
-    margin-top: 1em;
-}
-
-footer p {
+            footer p {
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1em;
-}
+    font-size: 1em; 
+                }
+                
+            
