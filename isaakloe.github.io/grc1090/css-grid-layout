@@ -1,1 +1,21 @@
+.container {
+    max-width: ___em;
+    margin: auto;
+}
 
+figure {
+    display: grid;
+    grid-template-columns: ___fr ___fr;
+    gap: ___em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: ___fr ___fr;
+    gap: ___em;
+}
+
+h3 {
+    border-top: ___em solid rgb(___, ___, ___);
+    padding-top: ___em;
+}
