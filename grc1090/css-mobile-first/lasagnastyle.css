@@ -57,17 +57,15 @@ main {
     margin: 1.75em 0 1em; 
     }
 
-    ol, ul { 
-        list-style: none 
-    }
+
 
         footer { 
             background-color: rgb(255, 136, 0)
-            color: rgb(250, 250, 250)
+            color: rgb(250, 250, 250);
             padding: 1.5em 1.25em;
             margin-top:1em;
-            color: rgb(250, 250, 250);
-            list-style: none
+
+
             }
 
             footer p {
