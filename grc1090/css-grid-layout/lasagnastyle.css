@@ -70,23 +70,23 @@ font-size: 1em;
 
 }
 .container {
-    max-width: ___em;
+    max-width: 60em;
     margin: auto;
 }
 
 figure {
     display: grid;
-    grid-template-columns: ___fr ___fr;
-    gap: ___em;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
 }
 
 main {
     display: grid;
-    grid-template-columns: ___fr ___fr;
-    gap: ___em;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
 }
 
 h3 {
-    border-top: ___em solid rgb(___, ___, ___);
-    padding-top: ___em;
+    border-top: 0.1em solid rgb(250, 150, 50);
+    padding-top: 2em;
 }
