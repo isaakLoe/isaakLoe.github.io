@@ -152,6 +152,11 @@ address {
 	color: rgb(255, 136, 0);
 }
 
+/* Keep the address lines close together. */
+address p {
+	margin: 0;
+}
+
 footer p {
 	margin: 0;
 }
