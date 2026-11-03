@@ -190,6 +190,34 @@ p.solution-intro {
 	color: rgb(68, 68, 68);
 }
 
+dl.app-lists {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin: 0 0 1rem;
+	padding: 1rem 0;
+	border-top: 1px solid rgb(229, 229, 226);
+	border-bottom: 1px solid rgb(229, 229, 226);
+}
+
+dl.app-lists dt {
+	font-size: 0.8rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: rgb(119, 119, 119);
+	margin-bottom: 0.25rem;
+}
+
+dl.app-lists div:last-child dt {
+	color: rgb(11, 122, 100);
+}
+
+dl.app-lists dd {
+	font-size: 0.95rem;
+	line-height: 1.45;
+}
+
 main.menu ul {
 	margin: 0;
 }
