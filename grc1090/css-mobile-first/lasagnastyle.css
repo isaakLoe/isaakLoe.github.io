@@ -47,7 +47,7 @@ main {
 
     h3{
         
-    font-family:poppins, sans-serif;
+    font-family: Sutro, serif;
     font-weight:700;
     font-style:normal;
     font-size:1.05em;
@@ -58,6 +58,21 @@ main {
     }
 
 
+
+    main ul {
+        list-style-type: disc;
+        padding-left: 1.5em;
+    }
+
+    main ol {
+        list-style-type: decimal;
+        padding-left: 1.5em;
+    }
+
+    main li {
+        margin-bottom: 0.75em;
+        line-height: 1.5;
+    }
 
         footer { 
             background-color: rgb(255, 136, 0);
