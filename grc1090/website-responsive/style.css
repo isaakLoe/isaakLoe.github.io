@@ -97,7 +97,7 @@ p.price {
 }
 
 nav ul li {
-	display: inline;
+	display: block;
 	margin-left: 0.5rem;
 	line-height: 2rem;
 	text-transform: uppercase;
@@ -152,6 +152,10 @@ footer p {
 }
 
 @media screen and (min-width: 60em) {
+
+	nav ul li {
+		display: inline;
+	}
 
 	body {
 		background-color: rgb(255, 0, 0);
