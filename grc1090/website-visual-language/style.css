@@ -1,13 +1,27 @@
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
-/* ---------- Base ---------- */
-
 body {
-	font-family: sans-serif; /* swap for your Adobe Fonts family */
-	font-size: 1.0625rem;
+	font-family: poppins, sans-serif;
 	line-height: 1.6;
 	color: rgb(51, 51, 51);
-	background-color: rgb(247, 247, 245);
+	background-color: rgb(238, 238, 238);
+}
+
+div.home-container {
+	background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(images/home-background.jpg) center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+}
+
+div.container {
+	position: relative;
+	min-height: 100vh;
+	background-color: rgb(250, 250, 250);
+}
+
+main {
+	padding: 1rem 1.5rem 5rem;
 }
 
 img {
@@ -15,40 +29,60 @@ img {
 	display: block;
 }
 
-a {
-	color: rgb(11, 122, 100);
-}
-
-div.container {
-	position: relative;
-	min-height: 100vh;
-	background-color: rgb(247, 247, 245);
-}
-
-div.home-container {
-	position: relative;
-	min-height: 100vh;
-	background: linear-gradient(rgba(20, 26, 24, 0.55), rgba(20, 26, 24, 0.55)), url(images/home-background.jpg) center center / cover fixed;
-}
-
-main {
-	padding: 1.5rem 1.5rem 6rem;
-}
-
-/* ---------- Header and navigation ---------- */
-
 header {
 	display: grid;
 	grid-template-columns: auto 1fr;
 	align-items: center;
-	gap: 1rem;
 	background-color: rgb(255, 255, 255);
-	padding: 1rem 1.5rem;
-	border-bottom: 1px solid rgb(229, 229, 226);
+	border-bottom: 1px solid rgb(204, 204, 204);
+	padding: 0.75rem 1.5rem;
 }
 
 h1 {
-	width: 9rem;
+	width: 11rem;
+}
+
+h2, h3, h4 {
+	font-family: Sutro, serif;
+	font-weight: bold;
+	line-height: 1.2;
+	color: rgb(34, 34, 34);
+}
+
+h2 {
+	font-size: 2rem;
+	margin: 1.5rem 0 0.75rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin: 2.5rem 0 1rem;
+}
+
+h4 {
+	font-size: 1.125rem;
+}
+
+a {
+	color: rgb(20, 92, 158);
+}
+
+p {
+	margin: 0 0 1rem;
+	max-width: 38rem;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 1rem;
+}
+
+figure img {
+	height: 14rem;
+	object-fit: cover;
 }
 
 nav ul {
@@ -58,103 +92,61 @@ nav ul {
 nav ul li {
 	display: block;
 	margin: 0.25rem 0;
-	list-style-type: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.05em;
 }
 
 nav ul li a {
 	display: inline-block;
-	min-width: 6rem;
-	padding: 0.5rem 1rem;
-	border-radius: 2rem;
+	padding: 0.5rem 0.75rem;
 	color: rgb(51, 51, 51);
-	font-weight: bold;
 	text-decoration: none;
 }
 
 nav ul li a:hover {
-	background-color: rgb(240, 240, 237);
+	background-color: rgb(238, 238, 238);
 }
 
 nav ul li.selected a {
 	color: rgb(255, 255, 255);
-	background-color: rgb(11, 122, 100);
+	background-color: rgb(20, 92, 158);
 }
-
-/* ---------- Headings and text ---------- */
-
-h2 {
-	font-size: 2rem;
-	line-height: 1.2;
-	font-weight: bold;
-	color: rgb(34, 34, 34);
-	margin: 1.5rem 0 1rem;
-}
-
-h3 {
-	font-size: 1.4rem;
-	font-weight: bold;
-	color: rgb(34, 34, 34);
-	margin: 2.5rem 0 1rem;
-}
-
-h4 {
-	font-weight: bold;
-	color: rgb(34, 34, 34);
-}
-
-p {
-	margin: 0 0 1rem;
-	max-width: 40rem;
-}
-
-figure {
-	margin-bottom: 1.5rem;
-}
-
-figure img {
-	border-radius: 1rem;
-	max-height: 18rem;
-	object-fit: cover;
-}
-
-/* ---------- Home page ---------- */
 
 p.slogan {
-	font-size: 2.75rem;
-	line-height: 1.15;
+	font-family: Sutro, serif;
+	font-size: 2.5rem;
 	font-weight: bold;
+	line-height: 1.15;
 	color: rgb(255, 255, 255);
-	margin: 4rem 0 1.5rem;
+	margin: 3rem 0 1.5rem;
 }
 
 p.intro {
-	font-size: 1.2rem;
+	font-size: 1.125rem;
 	color: rgb(255, 255, 255);
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+p.call-to-action {
+	margin-bottom: 3rem;
 }
 
 p.call-to-action a {
 	display: inline-block;
-	padding: 0.85rem 1.75rem;
-	border-radius: 2rem;
-	background-color: rgb(31, 184, 143);
-	color: rgb(18, 26, 24);
+	padding: 0.75rem 1.5rem;
+	color: rgb(255, 255, 255);
+	background-color: rgb(20, 92, 158);
 	font-weight: bold;
 	text-decoration: none;
 }
 
 p.call-to-action a:hover {
+	color: rgb(34, 34, 34);
 	background-color: rgb(255, 255, 255);
 }
 
-/* ---------- About and contact ---------- */
-
-article {
-	max-width: 40rem;
-}
-
 address {
-	font-style: normal;
 	margin-bottom: 1rem;
 }
 
@@ -162,93 +154,46 @@ address p {
 	margin: 0;
 }
 
+div.home-container address {
+	color: rgb(255, 255, 255);
+}
+
+article {
+	max-width: 38rem;
+}
+
 article ul li {
-	margin: 0 0 0.5rem 1.25rem;
-	list-style-type: disc;
-}
-
-/* ---------- Solutions page ---------- */
-
-p.page-intro {
-	font-size: 1.2rem;
-	margin-bottom: 1rem;
-}
-
-section.solution {
-	border-top: 1px solid rgb(204, 204, 200);
-	padding-top: 1.5rem;
-	margin-top: 2.5rem;
-}
-
-section.solution h3 {
-	margin-top: 0;
-}
-
-p.solution-intro {
-	font-size: 1.15rem;
-	font-style: italic;
-	color: rgb(68, 68, 68);
-}
-
-dl.app-lists {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1rem;
-	margin: 0 0 1rem;
-	padding: 1rem 0;
-	border-top: 1px solid rgb(229, 229, 226);
-	border-bottom: 1px solid rgb(229, 229, 226);
-}
-
-dl.app-lists dt {
-	font-size: 0.8rem;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 0.06em;
-	color: rgb(119, 119, 119);
-	margin-bottom: 0.25rem;
-}
-
-dl.app-lists div:last-child dt {
-	color: rgb(11, 122, 100);
-}
-
-dl.app-lists dd {
-	font-size: 0.95rem;
-	line-height: 1.45;
+	margin: 0 0 0.25rem;
 }
 
 main.menu ul {
-	margin: 0;
+	margin: 1rem 0;
 }
 
 main.menu ul li {
-	list-style-type: none;
-	padding: 0.75rem 0;
-	border-bottom: 1px solid rgb(229, 229, 226);
-}
-
-main.menu ul li:last-child {
-	border-bottom: 0;
-}
-
-main.menu ul li h4 {
-	display: inline;
-}
-
-main.menu ul li h4::after {
-	content: " — ";
-	font-weight: normal;
-	color: rgb(136, 136, 136);
+	margin: 0 0 1.5rem;
+	padding: 0 0 1.5rem;
+	border-bottom: 1px solid rgb(221, 221, 221);
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto auto;
+	column-gap: 1rem;
 }
 
 p.description {
-	display: inline;
-	margin: 0;
+	grid-column: 1 / 3;
+	margin: 0.25rem 0 0;
 	color: rgb(85, 85, 85);
 }
 
-/* ---------- Footer ---------- */
+p.price {
+	grid-row: 1;
+	grid-column: 2;
+	color: rgb(20, 92, 158);
+	font-weight: bold;
+	text-align: right;
+	margin: 0;
+}
 
 footer {
 	position: absolute;
@@ -256,72 +201,43 @@ footer {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 1rem 1.5rem;
-	background-color: rgb(34, 34, 34);
-	color: rgb(204, 204, 204);
-	font-size: 0.9rem;
+	color: rgb(221, 221, 221);
+	background-color: rgb(51, 51, 51);
 }
 
 footer p {
 	margin: 0;
 }
 
-/* ---------- Bigger screens ---------- */
-
 @media screen and (min-width: 60em) {
+
+	nav ul li {
+		display: inline-block;
+		margin: 0 0 0 0.5rem;
+	}
 
 	div.container, div.home-container {
 		max-width: 60em;
 		margin: auto;
 	}
 
-	header {
-		padding: 1rem 2rem;
-	}
-
-	h1 {
-		width: 11rem;
-	}
-
-	nav ul li {
-		display: inline-block;
-		margin: 0 0 0 0.25rem;
-	}
-
-	nav ul li a {
-		min-width: 0;
-	}
-
 	main {
-		padding: 2rem 2rem 6rem;
+		padding: 2rem 2rem 5rem;
 	}
 
 	p.slogan {
 		font-size: 4rem;
-		margin-top: 6rem;
+		margin-top: 4rem;
 	}
 
-	section.solution {
+	figure img {
+		height: 20rem;
+	}
+
+	main.menu ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "title title" "image text";
-		column-gap: 2.5rem;
-		align-items: start;
-	}
-
-	section.solution:nth-of-type(even) {
-		grid-template-areas: "title title" "text image";
-	}
-
-	section.solution h3 {
-		grid-area: title;
-	}
-
-	section.solution figure {
-		grid-area: image;
-	}
-
-	section.solution div.solution-text {
-		grid-area: text;
+		column-gap: 4rem;
 	}
 
 }
